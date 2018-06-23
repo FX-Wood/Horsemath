@@ -151,31 +151,31 @@ compute_button = tkinter.Button(window, text="Compute Journey", relief="groove",
 compute_button.bind("<Button-1>", compute_user_journey)
 compute_button.grid(row=button_row)
 
-class IncludeCoins(tkinter.Tk):
+# class IncludeCoins(tkinter.Tk):
 
-        def __init__(className=" Coin Calculator"):
+#         def __init__(className=" Coin Calculator"):
 
-        first_pane = tkinter.PanedWindow()
-        first_pane.pack()
+#         first_pane = tkinter.PanedWindow()
+#         first_pane.pack()
 
-        second_pane = tkinter.PanedWindow(first_pane, orient="vertical")
-        first_pane.add(second_pane)
+#         second_pane = tkinter.PanedWindow(first_pane, orient="vertical")
+#         first_pane.add(second_pane)
 
-        coin_input_row = 0
+#         coin_input_row = 0
 
-        coins_held_value = tkinter.IntVar()
-        coins_held_value.set(0)
+#         coins_held_value = tkinter.IntVar()
+#         coins_held_value.set(0)
 
-        coin_input_label = tkinter.Label(first_pane, text="Enter quantity of GP held:")
-        second_pane.add(coin_input_label)
+#         coin_input_label = tkinter.Label(first_pane, text="Enter quantity of GP held:")
+#         second_pane.add(coin_input_label)
 
-        coin_input_entry = tkinter.Entry(second_pane, textvariable=coins_held_value)
-        coin_input_entry.bind("<Return>")
-        second_pane.add(coin_input_entry)
+#         coin_input_entry = tkinter.Entry(second_pane, textvariable=coins_held_value)
+#         coin_input_entry.bind("<Return>")
+#         second_pane.add(coin_input_entry)
 
-include_coins_button = tkinter.Button(window, text="Include Coins", width=15)
-include_coins_button.bind("<Button-1>", IncludeCoins)
-include_coins_button.grid(row=button_row, column = 1)
+# include_coins_button = tkinter.Button(window, text="Include Coins", width=15)
+# include_coins_button.bind("<Button-1>", IncludeCoins)
+# include_coins_button.grid(row=button_row, column = 1)
 
 
 
